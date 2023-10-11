@@ -7,8 +7,10 @@ function App() {
       <div className="flex flex-col  min-h-screen min-w-screen ">
         <div className="h-14 bg-slate-600"></div>
 
-        <div className="grow flex">
-          <Signup />
+        <div className="h-screen flex">
+          <Routes>
+            <Route path="/" element={<Signup />} />
+          </Routes>
         </div>
       </div>
     </>
