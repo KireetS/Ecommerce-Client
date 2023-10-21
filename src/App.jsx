@@ -1,4 +1,6 @@
 import "./App.css";
+import ChangePassword from "./Components/ChangePassword";
+import Forgotpass from "./Components/Forgotpass";
 import Login from "./Components/Login";
 import Navbar from "./Components/Navbar";
 import Signup from "./Components/Signup";
@@ -15,6 +17,8 @@ function App() {
           <Routes>
             <Route path="/signup" element={<Signup />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/forgot-password" element={<Forgotpass />} />
+            <Route path="/change-password" element={<ChangePassword />} />
           </Routes>
         </div>
       </div>

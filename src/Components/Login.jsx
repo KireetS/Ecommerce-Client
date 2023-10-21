@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 const Login = () => {
   const [email, setMail] = useState("");
   const [password, setPass] = useState("");
@@ -100,6 +101,12 @@ const Login = () => {
           >
             Sign In{" "}
           </button>
+
+          <Link to="/forgot-password">
+            <h1 className="underline text-blue-400">
+              Forgot Password ? Click Here
+            </h1>
+          </Link>
         </div>
       </div>
     </>
